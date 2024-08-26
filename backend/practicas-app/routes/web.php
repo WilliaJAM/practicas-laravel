@@ -17,3 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/ala/{hola}/{variable}', function ($hola, $variable){
+    return "Gola {$hola} y {$variable}";
+});
+
